@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa82a9d2-311c-4e0c-a943-7965ef7cd321" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cs102/notes/LinkedList/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cs102/notes/LinkedList/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cs102/notes/LinkedList/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cs102/notes/LinkedList/Node.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,21 +47,21 @@
       <file leaf-file-name="Node.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cs102/notes/LinkedList/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2058">
-              <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+            <state relative-caret-position="912">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
               <folding>
+                <element signature="e#397#398#0" expanded="true" />
+                <element signature="e#427#428#0" expanded="true" />
                 <element signature="e#390#391#0" expanded="true" />
                 <element signature="e#414#415#0" expanded="true" />
                 <element signature="e#505#506#0" expanded="true" />
                 <element signature="e#529#530#0" expanded="true" />
                 <element signature="e#609#610#0" expanded="true" />
                 <element signature="e#636#637#0" expanded="true" />
+                <element signature="e#609#610#0" expanded="true" />
+                <element signature="e#636#637#0" expanded="true" />
                 <element signature="e#721#722#0" expanded="true" />
                 <element signature="e#748#749#0" expanded="true" />
-                <element signature="e#825#826#0" expanded="true" />
-                <element signature="e#849#850#0" expanded="true" />
-                <element signature="e#922#923#0" expanded="true" />
-                <element signature="e#949#950#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,8 +113,8 @@
         <option value="$PROJECT_DIR$/src/cs102/notes/RecursiveFactorials.java" />
         <option value="$PROJECT_DIR$/src/cs102/notes/PivotSearch.java" />
         <option value="$PROJECT_DIR$/src/cs102/notes/TowersOfHanoi.java" />
-        <option value="$PROJECT_DIR$/src/cs102/notes/LinkedList/Node.java" />
         <option value="$PROJECT_DIR$/src/cs102/notes/LinkedList/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/cs102/notes/LinkedList/Node.java" />
       </list>
     </option>
   </component>
@@ -349,21 +347,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cs102/notes/LinkedList/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2058">
-          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+        <state relative-caret-position="912">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
           <folding>
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
             <element signature="e#390#391#0" expanded="true" />
             <element signature="e#414#415#0" expanded="true" />
             <element signature="e#505#506#0" expanded="true" />
             <element signature="e#529#530#0" expanded="true" />
             <element signature="e#609#610#0" expanded="true" />
             <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
             <element signature="e#721#722#0" expanded="true" />
             <element signature="e#748#749#0" expanded="true" />
-            <element signature="e#825#826#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
-            <element signature="e#922#923#0" expanded="true" />
-            <element signature="e#949#950#0" expanded="true" />
           </folding>
         </state>
       </provider>

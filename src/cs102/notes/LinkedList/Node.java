@@ -11,21 +11,31 @@ public class Node {
         data = 0;
     }
 
-    public Node(int d, Node n, Node p)
+    public Node(int initData, Node initNext, Node initPrev)
     {
-        data = d;
-        next = n;
-        prev = p;
+        data = initData;
+        next = initNext;
+        prev = initPrev;
     }
 
-    public void setNext(Node n)
+    public void setData(int newData)
     {
-        next = n;
+        data = newData;
     }
 
-    public void setPrev(Node p)
+    public void setNext(Node newNext)
     {
-        prev = p;
+        next = newNext;
+    }
+
+    public void setPrev(Node newPrev)
+    {
+        prev = newPrev;
+    }
+
+    public int getData()
+    {
+        return data;
     }
 
     public Node getNext()
@@ -36,15 +46,5 @@ public class Node {
     public Node getPrev()
     {
         return prev;
-    }
-
-    public void setData(int d)
-    {
-        data = d;
-    }
-
-    public int getData()
-    {
-        return data;
     }
 }
