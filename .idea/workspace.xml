@@ -4,7 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/src/cs102/notes/PivotSearch.java" description="swap(arr, l + pivot, r);" line="80" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa82a9d2-311c-4e0c-a943-7965ef7cd321" name="Default" comment="" />
+    <list default="true" id="fa82a9d2-311c-4e0c-a943-7965ef7cd321" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/cs102/notes/TowersOfHanoi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,17 +21,26 @@
       <file leaf-file-name="RecursiveFactorials.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cs102/notes/RecursiveFactorials.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="55" />
+            <state relative-caret-position="84">
+              <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PivotSearch.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TowersOfHanoi.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cs102/notes/TowersOfHanoi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PivotSearch.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cs102/notes/PivotSearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="7" column="114" selection-start-line="7" selection-start-column="114" selection-end-line="7" selection-end-column="114" />
+            <state relative-caret-position="126">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -42,6 +54,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -50,6 +65,7 @@
         <option value="$PROJECT_DIR$/src/maples/joe/RecursiveFactorials.java" />
         <option value="$PROJECT_DIR$/src/cs102/notes/RecursiveFactorials.java" />
         <option value="$PROJECT_DIR$/src/cs102/notes/PivotSearch.java" />
+        <option value="$PROJECT_DIR$/src/cs102/notes/TowersOfHanoi.java" />
       </list>
     </option>
   </component>
@@ -59,6 +75,7 @@
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -107,7 +124,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="cs102.notes.PivotSearch" />
+      <option name="MAIN_CLASS_NAME" value="cs102.notes.TowersOfHanoi" />
       <module name="untitled" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
@@ -155,11 +172,11 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3298484" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33002093" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.12473958" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12473958" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39989546" />
@@ -203,7 +220,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -238,17 +255,24 @@
     <entry file="file://$PROJECT_DIR$/untitled.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs102/notes/RecursiveFactorials.java">
+    <entry file="file://$PROJECT_DIR$/src/cs102/notes/PivotSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="55" />
+        <state relative-caret-position="126">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs102/notes/PivotSearch.java">
+    <entry file="file://$PROJECT_DIR$/src/cs102/notes/RecursiveFactorials.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="7" column="114" selection-start-line="7" selection-start-column="114" selection-end-line="7" selection-end-column="114" />
+        <state relative-caret-position="84">
+          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs102/notes/TowersOfHanoi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
         </state>
       </provider>
     </entry>
