@@ -80,13 +80,21 @@ public class LinkedList {
     // Insert item at the given position
     public void insert(Object data, int pos)
     {
+        // Check if pos is impossible, throw an exception
+        if (pos > ++size)
+            throw new RuntimeException("Position out of range");
+
         // Create a new nude with the given data
         Node newNode = new Node(data, null, null);
 
         // If position is 1, prepend value
+        // else, check if pos is new tail
         if (pos == 1)
         {
             prepend(data);
+            return;
+        } else if (pos == ++size) {
+            append(data);
             return;
         }
 
@@ -114,6 +122,10 @@ public class LinkedList {
     // Remove item at the given position
     public void remove(int pos)
     {
+        // Check if pos is impossible, throw an exception
+        if (pos > size)
+            throw new RuntimeException("Position out of range");
+
         // If removing HEAD, check if that's the only node
         if (pos == 1)
         {
@@ -168,6 +180,11 @@ public class LinkedList {
 
     // Return the data contained by a Node
     public Object get(int pos) {
+        // Check if pos is impossible, throw an exception
+        if (pos > ++size)
+            throw new RuntimeException("Position out of range");
+
+        // Start at HEAD, iterate to requested position
         Node node = start;
         if (pos > size)
             return null;
