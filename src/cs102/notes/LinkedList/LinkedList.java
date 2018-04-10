@@ -1,9 +1,9 @@
 package cs102.notes.LinkedList;
 
 public class LinkedList {
-    protected Node start;
-    protected Node end ;
-    public int size;
+    private Node start;
+    private Node end ;
+    private int size;
 
     // Constructor for the list, requires no args
     public LinkedList()

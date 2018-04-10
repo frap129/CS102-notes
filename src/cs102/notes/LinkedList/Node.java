@@ -1,8 +1,8 @@
 package cs102.notes.LinkedList;
 
 public class Node {
-    protected Object data;
-    protected Node next, prev;
+    private Object data;
+    private Node next, prev;
 
     public Node()
     {
@@ -18,32 +18,32 @@ public class Node {
         prev = initPrev;
     }
 
-    public void setData(Object newData)
+    protected void setData(Object newData)
     {
         data = newData;
     }
 
-    public void setNext(Node newNext)
+    protected void setNext(Node newNext)
     {
         next = newNext;
     }
 
-    public void setPrev(Node newPrev)
+    protected void setPrev(Node newPrev)
     {
         prev = newPrev;
     }
 
-    public Object getData()
+    protected Object getData()
     {
         return data;
     }
 
-    public Node getNext()
+    protected Node getNext()
     {
         return next;
     }
 
-    public Node getPrev()
+    protected Node getPrev()
     {
         return prev;
     }
