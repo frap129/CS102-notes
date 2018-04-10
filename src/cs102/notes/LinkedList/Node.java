@@ -1,7 +1,7 @@
 package cs102.notes.LinkedList;
 
 public class Node {
-    protected int data;
+    protected Object data;
     protected Node next, prev;
 
     public Node()
@@ -11,14 +11,14 @@ public class Node {
         data = 0;
     }
 
-    public Node(int initData, Node initNext, Node initPrev)
+    public Node(Object initData, Node initNext, Node initPrev)
     {
         data = initData;
         next = initNext;
         prev = initPrev;
     }
 
-    public void setData(int newData)
+    public void setData(Object newData)
     {
         data = newData;
     }
@@ -33,7 +33,7 @@ public class Node {
         prev = newPrev;
     }
 
-    public int getData()
+    public Object getData()
     {
         return data;
     }
