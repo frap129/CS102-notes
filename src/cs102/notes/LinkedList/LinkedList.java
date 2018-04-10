@@ -13,20 +13,26 @@ public class LinkedList {
         size = 0;
     }
 
+    // Return if the list is empty or not
     public boolean isEmpty()
     {
         return start == null;
     }
 
+    // Return size of the list
     public int getSize()
     {
         return size;
     }
 
     // Insert a new item at HEAD
-    public void prepend(int val)
+    public void prepend(Object data)
     {
-        Node newNode = new Node(val, null, null);
+        // Create a new nude with the given data
+        Node newNode = new Node(data, null, null);
+
+        // If the list is empty, set to head and link circularly
+        // else move to HEAD
         if (start == null)
         {
             newNode.setNext(newNode);
@@ -41,13 +47,18 @@ public class LinkedList {
             start = newNode;
         }
 
+        // Update size to reflect new addition
         size++ ;
     }
 
     // Insert a new item at tail
-    public void append(int val)
+    public void append(Object data)
     {
-        Node newNode = new Node(val, null, null);
+        // Create a new nude with the given data
+        Node newNode = new Node(data, null, null);
+
+        // If the list is empty, set to head and link circularly
+        // else move to tail
         if (start == null)
         {
             newNode.setNext(newNode);
@@ -62,22 +73,28 @@ public class LinkedList {
             end = newNode;
         }
 
+        // Update size to reflect new addition
         size++;
     }
 
     // Insert item at the given position
-    public void insert(int val , int pos)
+    public void insert(Object data, int pos)
     {
-        Node newNode = new Node(val, null, null);
+        // Create a new nude with the given data
+        Node newNode = new Node(data, null, null);
+
+        // If position is 1, prepend value
         if (pos == 1)
         {
-            prepend(val);
+            prepend(data);
             return;
         }
 
+        // Iterate to position starting at head
         Node node = start;
         for (int i = 2; i <= size; i++)
         {
+            // Once we find the correct position, insert the node
             if (i == pos)
             {
                 Node tmp = node.getNext();
@@ -90,12 +107,14 @@ public class LinkedList {
             node = node.getNext();
         }
 
+        // Update size to reflect new addition
         size++ ;
     }
 
-    // remove item at the given position
+    // Remove item at the given position
     public void remove(int pos)
     {
+        // If removing HEAD, check if that's the only node
         if (pos == 1)
         {
             if (size == 1)
@@ -110,17 +129,19 @@ public class LinkedList {
             start.setPrev(end);
             end.setNext(start);
             size--;
-            return ;
+            return;
         }
 
+        // If removing tail, relink from prev to HEAD and reduce size
         if (pos == size)
         {
             end = end.getPrev();
             end.setNext(start);
             start.setPrev(end);
-            size-- ;
+            size--;
         }
 
+        // Otherwise, find position and remove
         Node node = start.getNext();
         for (int i = 2; i <= size; i++)
         {
@@ -130,7 +151,7 @@ public class LinkedList {
                 Node next = node.getNext();
                 prev.setNext(next);
                 next.setPrev(prev);
-                size-- ;
+                size--;
                 return;
             }
 
@@ -138,6 +159,29 @@ public class LinkedList {
         }
     }
 
+    // Empty the list
+    public void removeAll() {
+        start = null;
+        end = null;
+        size = 0;
+    }
+
+    // Return the data contained by a Node
+    public Object get(int pos) {
+        Node node = start;
+        if (pos > size)
+            return null;
+        for (int i = 1; i <= size; i++)
+        {
+            if (i == pos)
+                return node.getData();
+
+            node = node.getNext();
+        }
+        return null;
+    }
+
+    // Format the list as a string
     public String toString()
     {
         Node node = start;
