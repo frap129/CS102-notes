@@ -1,22 +1,22 @@
 package cs102.notes.LinkedList;
 
 public class LinkedList {
-    private Node start;
-    private Node end ;
+    private Node head;
+    private Node tail ;
     private int size;
 
     // Constructor for the list, requires no args
     public LinkedList()
     {
-        start = null;
-        end = null;
+        head = null;
+        tail = null;
         size = 0;
     }
 
     // Return if the list is empty or not
     public boolean isEmpty()
     {
-        return start == null;
+        return head == null;
     }
 
     // Return size of the list
@@ -33,18 +33,18 @@ public class LinkedList {
 
         // If the list is empty, set to head and link circularly
         // else move to HEAD
-        if (start == null)
+        if (head == null)
         {
             newNode.setNext(newNode);
             newNode.setPrev(newNode);
-            start = newNode;
-            end = start;
+            head = newNode;
+            tail = head;
         } else {
-            newNode.setPrev(end);
-            end.setNext(newNode);
-            start.setPrev(newNode);
-            newNode.setNext(start);
-            start = newNode;
+            newNode.setPrev(tail);
+            tail.setNext(newNode);
+            head.setPrev(newNode);
+            newNode.setNext(head);
+            head = newNode;
         }
 
         // Update size to reflect new addition
@@ -59,18 +59,18 @@ public class LinkedList {
 
         // If the list is empty, set to head and link circularly
         // else move to tail
-        if (start == null)
+        if (head == null)
         {
             newNode.setNext(newNode);
             newNode.setPrev(newNode);
-            start = newNode;
-            end = start;
+            head = newNode;
+            tail = head;
         } else {
-            newNode.setPrev(end);
-            end.setNext(newNode);
-            start.setPrev(newNode);
-            newNode.setNext(start);
-            end = newNode;
+            newNode.setPrev(tail);
+            tail.setNext(newNode);
+            head.setPrev(newNode);
+            newNode.setNext(head);
+            tail = newNode;
         }
 
         // Update size to reflect new addition
@@ -99,7 +99,7 @@ public class LinkedList {
         }
 
         // Iterate to position starting at head
-        Node node = start;
+        Node node = head;
         for (int i = 2; i <= size; i++)
         {
             // Once we find the correct position, insert the node
@@ -131,15 +131,15 @@ public class LinkedList {
         {
             if (size == 1)
             {
-                start = null;
-                end = null;
+                head = null;
+                tail = null;
                 size = 0;
                 return;
             }
 
-            start = start.getNext();
-            start.setPrev(end);
-            end.setNext(start);
+            head = head.getNext();
+            head.setPrev(tail);
+            tail.setNext(head);
             size--;
             return;
         }
@@ -147,14 +147,14 @@ public class LinkedList {
         // If removing tail, relink from prev to HEAD and reduce size
         if (pos == size)
         {
-            end = end.getPrev();
-            end.setNext(start);
-            start.setPrev(end);
+            tail = tail.getPrev();
+            tail.setNext(head);
+            head.setPrev(tail);
             size--;
         }
 
         // Otherwise, find position and remove
-        Node node = start.getNext();
+        Node node = head.getNext();
         for (int i = 2; i <= size; i++)
         {
             if (i == pos)
@@ -173,8 +173,8 @@ public class LinkedList {
 
     // Empty the list
     public void removeAll() {
-        start = null;
-        end = null;
+        head = null;
+        tail = null;
         size = 0;
     }
 
@@ -185,7 +185,7 @@ public class LinkedList {
             throw new RuntimeException("Position out of range");
 
         // Start at HEAD, iterate to requested position
-        Node node = start;
+        Node node = head;
         if (pos > size)
             return null;
         for (int i = 1; i <= size; i++)
@@ -201,23 +201,23 @@ public class LinkedList {
     // Format the list as a string
     public String toString()
     {
-        Node node = start;
+        Node node = head;
 
         // Check if empty first
         if (size == 0)
             return "empty\n";
 
         // If one item, show it as circular
-        if (start.getNext() == start)
+        if (head.getNext() == head)
         {
-            return start.getData()+ " <-> "+node.getData()+ "\n";
+            return head.getData()+ " <-> "+node.getData()+ "\n";
         }
 
-        String linkedList = start.getData()+ " <-> ";
-        node = start.getNext();
+        String linkedList = head.getData()+ " <-> ";
+        node = head.getNext();
 
         // Iterate over all elements
-        while (node.getNext() != start)
+        while (node.getNext() != head)
         {
             linkedList += node.getData()+ " <-> ";
             node = node.getNext();
